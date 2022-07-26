@@ -1,0 +1,51 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:  linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1)no-repeat;
+  background-size: cover;
+  
+  h2{
+    margin: 37px 0  0 22px;
+  }
+  .container {
+    border-radius: 10px;
+    height: auto;
+    width: 400px;
+    background-color: white;
+    @keyframes spinner {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .loading-spinner {
+      width: 20px;
+      height: 20px;
+      border: 10px solid #b8dfff;
+        border-top-color: rgb(184, 223, 255);
+        border-top-style: solid;
+        border-top-width: 10px;
+      border-top: 10px solid #4aaeff;
+      border-radius: 50%;
+      animation: spinner 0.5s linear infinite;
+    }
+    
+    .spinner-container {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+    }
+    form{
+        padding: 25px 30px;
+        input{
+            margin: 0 0 25px 0;
+        }
+    }
+  }
+}
